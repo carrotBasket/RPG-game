@@ -70,7 +70,7 @@ def play():
 
     elif first_action.lower() == 'w':
         print("You found a nearby spring with plenty of water to drink.")
-
+        global Health, Money, xp, level
         xp += 10
         if xp % 10 == 0:
             level += 1
@@ -96,3 +96,4 @@ def play():
                 print('Health ', Health)
 play()
 root.mainloop()
+
